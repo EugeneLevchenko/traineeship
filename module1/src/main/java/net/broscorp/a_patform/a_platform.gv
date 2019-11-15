@@ -1,0 +1,11 @@
+digraph G {
+       
+    jsc[label="Java Source Code" color=GREENYELLOW]; 
+    jdk[label="JDK \n //transforms Java code to Byte Code" color=TURQUOISE];
+    bc[label="Byte Code" color=GREENYELLOW]; 
+    jre[label="JRE \n //implementation of JVM needs to run Byte Code" color=BROWN];
+    jvm[label="JVM \n //instance of JRE" color=BROWN];
+    jit[label="JIT \n /* compiles byte code to machine language\n  is used to speed up the execution at the Runtime */"color=DARKBLUE];
+
+   jsc  -> jdk -> bc -> jre -> jvm -> jit;
+}
